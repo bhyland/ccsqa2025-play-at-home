@@ -1,21 +1,66 @@
-# Play At Home
+# CCSQA/NERCSQA Attendees Bonus: Play At Home
 
-I believe the best way to learn about AI is to play with the tools that are available, become familiar with what’s possible, the strengths and weaknesses.
+Thanks for attending "The power of a specification: Freeing your creative self to go beyond compliance"!
 
-Included with this file are simple versions of the agent prompts I used for this experiment along with some instructions to use them in a feedback loop as described in my talk.
+Here are the AI prompts I promised that demonstrate a fast feedback loop with layered QA/QC agents, as described in the talk.
 
-[!CAUTION] Remember: This isn’t meant for you to use at work and definitely not to replace the checks and balances that exist within your system. It not a finished product in any sense of the word, and it comes with no warrantee of fitness whatsoever.
+## What's Included
 
-1. Create a Project (isolate)
+This repository contains:
+- **`qc-spec-tester.md`** - QC agent prompt that tests documents against specifications
+- **`qa-evidence-verifier.md`** - QA agent prompt that verifies QC testing evidence and reports
+- **`README.md`** - This file with setup instructions
+- **`LICENSE`** - CC-BY-4.0 license details
 
-Create a project for working on your document. Both Claude and ChatGPT have projects now, which is one way to have several chats use the same source information. Upload the document that you want to work on, and the specifications you want to use as guardrails. You might want to change these documents to a format that works best for your choice of GPT. Remember, you can iterate on the specifications with AI.
+## Downloading the Files
 
-2. Set up your 'Agents'
-Set up at least 3 chats within the project: one for QC, one for QA, and one for you to iterate on the document. Paste the markdown files in their respective chat windows.
+Each markdown file contains a complete prompt that you can use with AI tools like Claude or ChatGPT.
 
-3. Create - Test - Fix - Interate
+**To use them:**
+- Click any `.md` file above to view it, then copy the contents
+- Or download the entire repository: click the green "Code" button → "Download ZIP"
 
-Work on your document with the main AI, and every once in a while ask the QC AI to test your work. The QC agent will publish a report as 'Requirements Testing Report' in markdown format. Make that report available to the whole project. Make fixes and iterate on your creation. Check the QC agent's work by asking the QA agent to evaluate the QC report.
+## How to Use These Agents
+
+> [!CAUTION]
+> **These materials are for learning and experimentation only.** They are not intended for production use in regulated environments or as a replacement for validated quality systems. See the Disclaimer section below.
+
+### Step 1: Create an Isolated Project
+
+Create a dedicated project/workspace in your AI tool (both Claude and ChatGPT support projects). This keeps your experiment separate and allows multiple chats to share the same documents.
+
+**Upload to your project:**
+- The document you want to work on (e.g., an SOP, protocol, or report)
+- The specifications/requirements it must meet
+- Any style guides or templates
+
+**Tip:** You can use AI to help refine your specification documents before you begin.
+
+### Step 2: Set Up Your Agent Chats
+
+Create three separate chats within your project:
+
+1. **Creator Chat** - Your working space for drafting and editing the document
+2. **QC Chat** - Paste the `qc-spec-tester.md` prompt here
+3. **QA Chat** - Paste the `qa-evidence-verifier.md` prompt here
+
+Each chat has access to the same project documents but performs a different role.
+
+### Step 3: The Fast Feedback Loop
+
+**Create → Test → Fix → Iterate:**
+
+1. **Create:** Draft or edit your document in the Creator chat
+2. **Test (QC):** Ask the QC chat to test your document against the specifications
+   - The QC agent will produce a "Requirements Testing Report" in markdown format
+   - Save this report to your project files
+3. **Fix:** Review the QC findings and make corrections in your Creator chat
+4. **Verify (QA):** Ask the QA chat to review the QC report
+   - The QA agent checks that testing evidence is properly documented and valid
+   - This adds a second layer of quality checking
+5. **Iterate:** Repeat the cycle as you refine your document
+
+**The key benefit:** You get rapid feedback on compliance issues while you work, rather than discovering problems during formal review.
 
 ## Disclaimer
 
@@ -29,7 +74,7 @@ These prompts and instructions are demonstration materials from a conference pre
 
 The author assumes **NO LIABILITY** for any damages, losses, or regulatory issues arising from the use or misuse of these materials. Users assume all risks associated with their use.
 
-If you work in a regulated industry (GLP, pharmaceutical, medical device, etc.), consult your quality and regulatory teams before adapting any of these concepts for your environment.
+**If you work in a regulated industry** (GLP, pharmaceutical, medical device, etc.), consult your quality and regulatory teams before adapting any of these concepts for your environment.
 
 ## License
 
