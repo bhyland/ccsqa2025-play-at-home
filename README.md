@@ -21,11 +21,13 @@ Each markdown file contains a complete prompt that you can use with AI tools lik
 - Click any `.md` file above to view it, then copy the contents
 - Or download the entire repository: click the green "Code" button → "Download ZIP"
 
-> [!Tip] When you open a .md file, copy everything (including the markdown headings). ChatGPT automatically interprets markdown when pasted into chat.
+> [!TIP] 
+> When you open a .md file, copy everything (including the markdown headings). ChatGPT automatically interprets markdown when pasted into chat.
 
 ## How to Use These Agents
 
-> [!CAUTION] **These materials are for learning and experimentation only.** They are not intended for production use in regulated environments or as a replacement for validated quality systems. See the Disclaimer section below.
+> [!CAUTION] 
+> **These materials are for learning and experimentation only.** They are not intended for production use in regulated environments or as a replacement for validated quality systems. See the Disclaimer section below.
 
 ### Step 1: Create an Isolated Project
 
@@ -47,7 +49,8 @@ If you don’t have Projects, you can simulate it by manually re-uploading the s
 - The specifications or requirements it must meet.
 - Any templates or style guides.
 
-> [!Tip] You can use AI to help refine your specifications before you begin.
+> [!TIP] 
+> You can use AI to help refine your specifications before you begin.
 
 
 
@@ -61,7 +64,8 @@ Create at least three separate chats within your project:
 
 Each chat has access to the same project documents but performs a different role. Make sure you restate the role clearly (“You are the QC tester…”) each time you start a new chat for consistent behavior.
 
-> [!Tip] Optional (ChatGPT Projects): After pasting each agent prompt, click “Pin” to keep it visible at the top of the chat.
+> [!TIP] 
+> Optional (ChatGPT Projects): After pasting each agent prompt, click “Pin” to keep it visible at the top of the chat.
 
 
 ### Step 3: The Fast Feedback Loop
@@ -78,7 +82,8 @@ Each chat has access to the same project documents but performs a different role
    - This adds a second layer of quality checking
 5. **Iterate:** Repeat the cycle as you refine your document
 
-> [!Tip] In **ChatGPT**: To save a report, click the '...' (three dots) next to the message → “Copy message” and paste it into your markdown editor or back into the project files. In **Claude**, click on the generated report and look for the "Copy" button above to copy the report to the project. If you don't see that option, just ask Claude to save it to the project.
+> [!TIP] 
+> In **ChatGPT**: To save a report, click the '...' (three dots) next to the message → “Copy message” and paste it into your markdown editor or back into the project files. In **Claude**, click on the generated report and look for the "Copy" button above to copy the report to the project. If you don't see that option, just ask Claude to save it to the project.
 
 **The key benefit:** You get rapid feedback on compliance issues while you work, rather than discovering problems during formal review.
 
