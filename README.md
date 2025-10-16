@@ -15,39 +15,54 @@ This repository contains:
 
 ## Downloading the Files
 
-Each markdown file contains a complete prompt that you can use with AI tools like Claude or ChatGPT.
+Each markdown file contains a complete prompt that you can use with AI tools like **Claude** or **ChatGPT**.
 
 **To use them:**
 - Click any `.md` file above to view it, then copy the contents
 - Or download the entire repository: click the green "Code" button → "Download ZIP"
 
+[!Tip] When you open a .md file, copy everything (including the markdown headings). ChatGPT automatically interprets markdown when pasted into chat.
+
 ## How to Use These Agents
 
-> [!CAUTION]
-> **These materials are for learning and experimentation only.** They are not intended for production use in regulated environments or as a replacement for validated quality systems. See the Disclaimer section below.
+[!CAUTION] **These materials are for learning and experimentation only.** They are not intended for production use in regulated environments or as a replacement for validated quality systems. See the Disclaimer section below.
 
 ### Step 1: Create an Isolated Project
 
-Create a dedicated project/workspace in your AI tool (both Claude and ChatGPT support projects). This keeps your experiment separate and allows multiple chats to share the same documents.
+Create a dedicated project/workspace in your AI tool. This keeps your experiment separate and allows multiple chats to share the same documents.
 
 In the **project instructions** add the contents of `project-instructions-template.md` and complete the missing details for what your goals are for the project.
 
-**Upload to your project's shared documents:**
-- The document you want to work on (e.g., an SOP, protocol, or report)
-- The specifications/requirements it must meet
-- Any style guides or templates
+**Claude users:**
+Use Projects to group related chats and documents. Upload your files (SOPs, specs, templates) to the project’s shared files section.
 
-**Tip:** You can use AI to help refine your specification documents before you begin.
+**ChatGPT users:**
+If you have ChatGPT Projects (Pro/Team), create a new project and upload your files there.
+
+If you don’t have Projects, you can simulate it by manually re-uploading the same files into each chat.
+
+**Upload to your project (or each chat):**
+
+- The document you want to work on (e.g., an SOP, protocol, or report).
+- The specifications or requirements it must meet.
+- Any templates or style guides.
+
+[!Tip] You can use AI to help refine your specifications before you begin.
+
+
 
 ### Step 2: Set Up Your Agent Chats
 
 Create at least three separate chats within your project:
 
 1. **Creator Chat** - Your working space for drafting and editing the document
-2. **QC Chat** - Start with the prompt "You are the QC specification tester. Here are your instructions:". Now paste or upload the `qc-spec-tester.md` prompt here.
-3. **QA Chat** - Start with the prompt "You are the QC specification tester. Here are your instructions:". Paste or upload the `qa-evidence-verifier.md` prompt here.
+2. **QC Chat** - In a new chat, say: "You are the QC specification tester. Follow the instructions I’ll paste below:". Now paste or upload the `qc-spec-tester.md` prompt here.
+3. **QA Chat** - In a new chate, say: "You are the QA evidence verifier. Follow the instructions I'll paste below:". Paste or upload the `qa-evidence-verifier.md` prompt here.
 
-Each chat has access to the same project documents but performs a different role.
+Each chat has access to the same project documents but performs a different role. Make sure you restate the role clearly (“You are the QC tester…”) each time you start a new chat for consistent behavior.
+
+[!Tip] Optional (ChatGPT Projects): After pasting each agent prompt, click “Pin” to keep it visible at the top of the chat.
+
 
 ### Step 3: The Fast Feedback Loop
 
@@ -63,13 +78,33 @@ Each chat has access to the same project documents but performs a different role
    - This adds a second layer of quality checking
 5. **Iterate:** Repeat the cycle as you refine your document
 
+[!Tip] In ChatGPT: To save a report, click the '...' (three dots) next to the message → “Copy message” and paste it into your markdown editor or back into the project files. In Claude, click on the generated report and look for the "Copy" button above to copy the report to the project. If you don't see that option, just ask Claude to save it to the project.
+
 **The key benefit:** You get rapid feedback on compliance issues while you work, rather than discovering problems during formal review.
 
 ### Further Exploration
 
-What I've described so far is a rather manual process - you need to upload, convert and move documents between the 'agents' and ask them to do their thing. Once you get familiar with the workflow you can start playing with various agentic tools to orchestrate and automate between the roles. For example, you could automate sending files between the QA/QC agents when changes are detected, update reports and display results.
+What I've described so far is a rather manual process - you need to upload, convert and move documents between the 'agents' and ask them to do their thing. 
+
+Once you get familiar with the workflow you can start playing with various agentic tools to orchestrate and automate between the roles. For example, you could automate sending files between the QA/QC agents when changes are detected, trigger re-testing when changes are detected, and generate dashboards or summary reports of quality metrics. 
+
+These require more setup but can mirror an automated QA/QC pipeline.
 
 If you're interested in a workshop that explores these and other topics for building multi-agent QA/QC workflows for quality, let me know by [joining the waitlist](https://daily.haiqu.ca/ffl-workshop) and I'll notify you when workshop dates are available.
+
+---
+
+### Compatibility Notes
+
+| Feature              | Claude                      | ChatGPT                                   |
+| -------------------- | --------------------------- | ----------------------------------------- |
+| Shared context       | Built-in via *Projects*     | Available via *Projects* (Pro/Team only)  |
+| Markdown handling    | Previews markdown visually  | Renders markdown text directly            |
+| Upload & reuse files | Native file panel           | File panel (Pro/Team) or manual re-upload |
+| Role consistency     | Retained across long chats  | Reinforce role each session for stability |
+| Output saving        | “Download” or copy directly | “... → Copy message”            |
+
+---
 
 ## Disclaimer
 
