@@ -53,7 +53,7 @@ Each chat has access to the same project documents but performs a different role
 **Create → Test → Fix → Iterate:**
 
 1. **Create:** Draft or edit your document in the Creator chat
-2. **Test (QC):** Ask the QC chat to test your document against the specifications
+2. **Test (QC):** Ask the QC chat to test your document against the specifications.
    - The QC agent will produce a "Requirements Testing Report" in markdown format
    - Save this report to your project files
 3. **Fix:** Review the QC findings and make corrections in your Creator chat
