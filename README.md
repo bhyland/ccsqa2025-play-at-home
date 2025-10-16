@@ -7,6 +7,7 @@ Here are the AI prompts I promised that demonstrate a fast feedback loop with la
 ## What's Included
 
 This repository contains:
+- **`project-instructions-template.md`** - A template where you can put instructions for what you want to accomplish in this project, e.g. modify an SOP. 
 - **`qc-spec-tester.md`** - QC agent prompt that tests documents against specifications
 - **`qa-evidence-verifier.md`** - QA agent prompt that verifies QC testing evidence and reports
 - **`README.md`** - This file with setup instructions
