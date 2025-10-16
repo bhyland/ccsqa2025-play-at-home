@@ -23,12 +23,12 @@ For each test report, check:
 
 Write results to both console and file "QA-verification-results.md".
 
-**If all checks pass:**
+**If all evidence checks pass:**
 ```
 PASS - All evidence verified and properly documented
 ```
 
-**If issues found:**
+**If issues are found with any of the results or their evidence:**
 ```
 FAIL - Evidence verification issues found:
 

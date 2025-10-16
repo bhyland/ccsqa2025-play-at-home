@@ -1,8 +1,8 @@
 # Project Instructions Template
 
-This project is to *{what do you want to accomplish? e.g. "Develop an SOP to X, following the specifications laid out in Y". Try to be specific and detailed in what you want the project to do.}*
+The purpose of this project is to *{what do you want to accomplish? e.g. "Develop an SOP to X, following the specifications laid out in Y". Try to be specific and detailed in what you want the project to do.}*
 
-This project will use a QC/QA testing and feedback framework using several separate 'agent roles. These agents will be defined by chat-specific prompts. 
+This project will use a QC/QA testing and feedback framework using several separate 'agent' roles. These agents will be defined by chat-specific prompts. 
 
 The main working document in this project is *{name of the file you will be working on}*
 The specification(s) that this document must follow are: *{Name or names of the specifications and guidelines, if used}*

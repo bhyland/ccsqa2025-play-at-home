@@ -33,7 +33,7 @@ Each markdown file contains a complete prompt that you can use with AI tools lik
 
 Create a dedicated project/workspace in your AI tool. This keeps your experiment separate and allows multiple chats to share the same documents.
 
-In the **project instructions** add the contents of `project-instructions-template.md` and complete the missing details for what your goals are for the project.
+If your AI tool supports it, in the **project instructions** add the contents of `project-instructions-template.md` and complete the missing details for what your goals are for the project.
 
 **Claude users:**
 Use Projects to group related chats and documents. Upload your files (SOPs, specs, templates) to the project’s shared files section.
@@ -58,7 +58,7 @@ If you don’t have Projects, you can simulate it by manually re-uploading the s
 
 Create at least three separate chats within your project:
 
-1. **Creator Chat** - Your working space for drafting and editing the document
+1. **Creator Chat** - Your working space for drafting and editing the document. You can add the project instructions here (see Step 1) if you couldn't add it to the wider project.
 2. **QC Chat** - In a new chat, say: "You are the QC specification tester. Follow the instructions I’ll paste below:". Now paste or upload the `qc-spec-tester.md` prompt here.
 3. **QA Chat** - In a new chate, say: "You are the QA evidence verifier. Follow the instructions I'll paste below:". Paste or upload the `qa-evidence-verifier.md` prompt here.
 
