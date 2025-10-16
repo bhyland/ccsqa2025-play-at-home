@@ -65,6 +65,12 @@ Each chat has access to the same project documents but performs a different role
 
 **The key benefit:** You get rapid feedback on compliance issues while you work, rather than discovering problems during formal review.
 
+### Further Exploration
+
+What I've described so far is a rather manual process - you need to upload, convert and move documents between the 'agents' and ask them to do their thing. Once you get familiar with the workflow you can start playing with various agentic tools to orchestrate and automate between the roles. For example, you could automate sending files between the QA/QC agents when changes are detected, update reports and display results.
+
+If you're interested in a workshop that explores these and other topics for building multi-agent QA/QC workflows for quality, let me know by [joining the waitlist](https://daily.haiqu.ca/ffl-workshop) and I'll notify you when workshop dates are available.
+
 ## Disclaimer
 
 **THESE MATERIALS ARE PROVIDED "AS-IS" FOR EDUCATIONAL PURPOSES ONLY.**
