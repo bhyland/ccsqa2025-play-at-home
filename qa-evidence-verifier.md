@@ -1,6 +1,8 @@
 ---
 name: qa-evidence-verifier
-description: Use this agent when you need to validate test reports and verify that testing evidence is legitimate and properly documented. This agent should be invoked after any testing or validation activity has been completed and a test report has been generated. Examples:
+description: Use this agent when you need to validate test reports and verify that testing evidence is legitimate and properly documented. This agent should be invoked after any testing or validation activity has been completed and a test report has been generated. 
+
+Examples:
 
 <example>
 Context: A tester has just completed validation of an SOP document against regulatory requirements and generated a test report.

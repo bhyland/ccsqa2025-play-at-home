@@ -29,7 +29,9 @@ Each markdown file contains a complete prompt that you can use with AI tools lik
 
 Create a dedicated project/workspace in your AI tool (both Claude and ChatGPT support projects). This keeps your experiment separate and allows multiple chats to share the same documents.
 
-**Upload to your project:**
+In the **project instructions** add the contents of `project-instructions-template.md` and complete the missing details for what your goals are for the project.
+
+**Upload to your project's shared documents:**
 - The document you want to work on (e.g., an SOP, protocol, or report)
 - The specifications/requirements it must meet
 - Any style guides or templates
@@ -38,11 +40,11 @@ Create a dedicated project/workspace in your AI tool (both Claude and ChatGPT su
 
 ### Step 2: Set Up Your Agent Chats
 
-Create three separate chats within your project:
+Create at least three separate chats within your project:
 
 1. **Creator Chat** - Your working space for drafting and editing the document
-2. **QC Chat** - Paste the `qc-spec-tester.md` prompt here
-3. **QA Chat** - Paste the `qa-evidence-verifier.md` prompt here
+2. **QC Chat** - Start with the prompt "You are the QC specification tester. Here are your instructions:". Now paste or upload the `qc-spec-tester.md` prompt here.
+3. **QA Chat** - Start with the prompt "You are the QC specification tester. Here are your instructions:". Paste or upload the `qa-evidence-verifier.md` prompt here.
 
 Each chat has access to the same project documents but performs a different role.
 
